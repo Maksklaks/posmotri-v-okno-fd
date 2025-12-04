@@ -63,6 +63,7 @@ ol {
 .result {
   display: flex;
   flex-direction: column;
+  margin-top: auto;
 }
 
 .search-form {
@@ -76,7 +77,6 @@ ol {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 30px;
   max-width: 399px;
 }
 
@@ -138,8 +138,9 @@ ol {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
-  line-height: 94%;
+  line-height: 0.94;
   text-transform: uppercase;
+  margin-bottom: 25px;
 }
 
 .content__accent {
@@ -224,6 +225,7 @@ ol {
   align-items: center;
   width: fit-content;
   gap: 5px;
+  cursor: pointer;
 }
 
 .search-form__textfield {
@@ -258,7 +260,6 @@ ol {
   border: 1px solid #fff;
   box-sizing: border-box;
   display: block;
-  cursor: pointer;
 }
 
 .search-form__pseudo-checkbox::after {
@@ -276,7 +277,6 @@ ol {
 
 .search-form__label:has(.search-form__checkbox):hover .search-form__label-text {
   text-decoration: underline;
-  cursor: pointer;
 }
 
 .button {
@@ -294,7 +294,7 @@ ol {
 }
 
 .more-button {
-  width: 100%;
+  width: calc(100% - 3px);
   height: 34px;
   flex-shrink: 0;
 }
